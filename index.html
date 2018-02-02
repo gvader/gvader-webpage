@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Łukasz Gwadera">
     <meta name="description" content="Company specialized in software development">
-    <meta name="keywords" content="development, software, web design"
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <meta name="keywords" content="development, software, web design">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
 
     
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="branding">
+            <div id="branding">
                 <h1>Gvader Software</h1>
             </div>
             <nav>
@@ -38,12 +38,13 @@
     </section>
     
     <section id="newsletter">
-        <div class="container"></div>
-        <h1>Subscribe to our newsletter</h1>
-        <form action="newsletter.js">
-            <input type="email" placeholder="Enter your email">
-            <button type="submit" class="newsletter_button">Subscribe</button>
-        </form>
+        <div class="container">
+            <h1>Subscribe to our newsletter</h1>
+            <form action="newsletter.js">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit" class="newsletter_button">Subscribe</button>
+            </form>
+        </div>
     </section>
 
     <section id="boxes">
@@ -79,7 +80,9 @@
     </section>
 
     <footer>
-        <p>Gvader Software, Copyright &copy; 2018</p>
+        <div class="container">
+            <p>Gvader Software, Copyright &copy; 2018</p>
+        </div>
     </footer>
 
 </body>
