@@ -102,7 +102,6 @@ header a:hover {
 }
 
 /* Newsletter */
-
 #newsletter {
     padding: 15px;
     color: #ffffff;
@@ -125,7 +124,6 @@ header a:hover {
 }
 
 /* Boxes */
-
 #boxes {
     margin-top: 20px;
 }
@@ -142,7 +140,6 @@ header a:hover {
 }
 
 /* Sidebar */
-
 aside#sidebar {
     float: right;
     width: 30%;
@@ -156,14 +153,12 @@ aside#sidebar .quote textarea {
 }
 
 /* Main Col */
-
 article#main-col {
     float: left;
     width: 65%;
 }
 
 /* Services */
-
 ul#services li {
     list-style: none;
     padding: 20px;
@@ -173,7 +168,6 @@ ul#services li {
 }
 
 /* Footer */
-
 footer {
     padding: 20px;
     margin-top: 20px;
@@ -183,7 +177,6 @@ footer {
 }
 
 /* Media Queries */
-
 @media(max-width: 768px) {
     header #branding, 
     header nav,
