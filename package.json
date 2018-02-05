@@ -1,0 +1,33 @@
+{
+  "name": "gvader-webpage",
+  "version": "1.0.0",
+  "description": "Official Home of Gvader Software Inc.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gvader/gvader-webpage.git"
+  },
+  "keywords": [
+    "development",
+    "web",
+    "design",
+    "buisness",
+    "apps"
+  ],
+  "author": "Łukasz Gwadera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gvader/gvader-webpage/issues"
+  },
+  "homepage": "https://github.com/gvader/gvader-webpage#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-validator": "^4.3.0",
+    "nodemailer": "^4.4.2"
+  }
+}

@@ -20,9 +20,9 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="current"><a href="services.html">Services</a></li>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li class="current"><a href="services">Services</a></li>
                 </ul>
             </nav>
         </div>
@@ -81,18 +81,23 @@
             <aside id="sidebar">
                 <div class="dark">
                     <h3>Get a Quote</h3>
-                    <form class="quote" action="quote.js">
+                    <form class="quote" method="POST" action="/contact">
                         <div>
                             <label>Name</label><br>
-                            <input type="text" placeholder="Your Name">
+                            <input type="text" placeholder="Your Name" name="name" required
+                                value="<% if(typeof name !== 'undefined') { %><%= name %><% } %>">
                         </div>
                         <div>
                             <label>Email</label><br>
-                            <input type="email" placeholder="Your Email">
+                            <input type="email" placeholder="Your Email" name="email" required
+                                value="<% if(typeof email !== 'undefined') { %><%= email %><% } %>">
+                        </div>
+                        <div>
+                            <input type="text" class="yourcompany" placeholder="Your Company Name" name="company" required>
                         </div>
                         <div>
                             <label>Message</label><br>
-                            <textarea placeholder="Message"></textarea>
+                            <textarea placeholder="Message" required><% if (typeof body !=='undefined') { %><%= body %><% } %></textarea>
                         </div>
                         <button type="submit" class="common_button">Send</button>
                     </form>
